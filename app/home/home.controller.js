@@ -19,7 +19,7 @@
         fd.append('file', file)
       })
       $http({
-          url: 'http://localhost:3000/upload',
+          url: 'http://206.189.203.145:3000/upload',
           transformRequest: angular.identity,
           method: "POST",
           data: fd,

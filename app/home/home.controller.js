@@ -19,7 +19,7 @@
         fd.append('file', file)
       })
       $http({
-          url: 'http://206.189.203.145:3000/upload',
+          url: 'http://localhost:3000/upload',
           transformRequest: angular.identity,
           method: "POST",
           data: fd,
@@ -28,14 +28,20 @@
           }
         })
         .then(function(result) {
-          console.log(result.data);
+
 
           Highcharts.chart('container', {
             xAxis: {
-              min: 121000,
-              max: 58309374
+              title: {
+                text: 'previous period'
+              },
+              min: result.data.linearArray[0][0],
+              max: result.data.linearArray[result.data.linearArray.length - 2][0]
             },
             yAxis: {
+              title: {
+                text: 'Latest period'
+              },
               min: 0
             },
             title: {
@@ -58,6 +64,33 @@
               type: 'scatter',
               name: 'Observations',
               data: result.data.regArray,
+              marker: {
+                radius: 4
+              }
+            }]
+          });
+          console.log(result.data.dataGraph2);
+          Highcharts.chart('container1', {
+            xAxis: {
+              title: {
+                text: 'percentage of bricks'
+              },
+              min: 0,
+              max: 100
+            },
+            yAxis: {
+              title: {
+                text: 'Growth in percentage'
+              },
+              min: 0
+            },
+            title: {
+              text: 'Simple Graph'
+            },
+            series: [{
+              type: 'scatter',
+              name: 'Data Points',
+              data: result.data.dataGraph2,
               marker: {
                 radius: 4
               }

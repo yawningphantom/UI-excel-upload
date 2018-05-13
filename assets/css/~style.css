@@ -1,0 +1,162 @@
+body {
+    background-color: #eee;
+    font-family: RobotoDraft, Roboto, sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+  }
+  
+  md-icon {
+    color: rgba(246, 239, 239, 0.54);
+  }
+  
+  .container-page {
+    margin: 22px;
+  }
+  md-list-item{
+    border: 1px solid grey;
+  }
+  .text-center {
+    text-align: center;
+  }
+  
+  md-card-content p {
+    color: #fff;
+  }
+  
+  md-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  md-card-content>md-icon {
+    color: #fff;
+    margin: 0 auto;
+    display: block !important;
+    font-size: 35px !important;
+  }
+  
+  .breadcrumbs {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    height: 40px;
+    width: 100%;
+  }
+  
+  .LoginCard {
+    min-width: 308px;
+  }
+  
+  .login_form button {
+    min-width: 100%;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .md-sidemenu .md-button {
+    background-color: rgb(66, 66, 66) !important;
+    padding-right: 250px;
+  }
+  
+  .md-sidemenu .md-button:hover {
+    background-color: #1E88E5 !important;
+  }
+  
+  .login_form md-input-container:not(.md-input-invalid).md-input-has-value label {
+    color: #F1AB00 !important;
+    border-color: #F1AB00;
+  }
+  
+  .login_form md-input-container label {
+    color: #F1AB00;
+    border-color: #F1AB00;
+  }
+  
+  .login_form md-input-container {
+    border-color: #F1AB00;
+  }
+  
+  .login_form .md-input {
+    border-color: #F1AB00 !important;
+  }
+  
+  .login_form a {
+    position: relative;
+    right: -159px;
+    bottom: 73px;
+    font-size: 13px;
+  }
+  
+  md-toast.md-center {
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+  }
+  
+  md-toolbar {
+    min-height: 50px;
+    max-height: 50px
+  }
+  
+  .StandardToolbar {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .create_case_page md-card md-input-container input {
+    width: 93%;
+    padding-right: 10px;
+  }
+  
+  .create_case_page md-card md-input-container {
+    padding: 16px;
+  }
+  
+  .footerToolbar {
+    position: absolute;
+    bottom: 0px;
+  }
+  
+  .CardColorDefault md-card-content p{
+    color: #3F51B5;
+    padding: 0px;
+    margin-top: 7px;
+    font-size: 14px;
+  }
+  
+  .CardColorDefault md-card-content h4 {
+    padding: 0px;
+    margin: 0px;
+  }
+  .CardColorDefault md-card-content span {
+   color:#F1AB00;
+  }
+  
+  
+  md-card md-content {
+    padding-bottom: 90px;
+  }
+  
+  .customtable, td, th {
+      border: 1px solid #ddd;
+      text-align: left;
+  }
+  
+  .customtable {
+      border-collapse: collapse;
+      width: 80%;
+  }
+  
+  .customtable th, td {
+      padding: 15px;
+  }
+  .customtable{
+    margin: 0 auto;
+  }
+  .PartnerForm md-tabs-canvas{
+    display: none !important;
+  }
+  
+  md-sidenav {
+    position: absolute !important;
+  }

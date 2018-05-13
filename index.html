@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Orion - Portal">
+  <meta name="application-name" content="Orion - Portal">
+  <title>Lifeboat</title>
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="assets/lib/angular-material/angular-material.css">
+  <link rel="stylesheet" type="text/css" href="assets/lib/angular-material-sidemenu/dest/angular-material-sidemenu.css">
+  <link href="assets/lib/angular-material-data-table/dist/md-data-table.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/lib/md-date-range-picker/dist/md-date-range-picker.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-aria/angular-aria.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-animate/angular-animate.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-cookies/angular-cookies.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-touch/angular-touch.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-sanitize/angular-sanitize.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-material/angular-material.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-material-sidemenu/dest/angular-material-sidemenu.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-ui-router/release/angular-ui-router.js"></script>
+  <script type="text/javascript" src="assets/lib/d3/d3.js"></script>
+  <script type="text/javascript" src="assets/lib/nvd3/build/nv.d3.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-nvd3/dist/angular-nvd3.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-aria/angular-aria.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-messages/angular-messages.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-mocks/angular-mocks.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-material-data-table/dist/md-data-table.min.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-resource/angular-resource.min.js"></script>
+  <script type='text/javascript' src="assets/lib/cryptojslib/rollups/aes.js"></script>
+  <script type='text/javascript' src="assets/lib/angular-cryptography/mdo-angular-cryptography.js"></script>
+  <script type="text/javascript" src="assets/lib/ngstorage/ngStorage.min.js"></script>
+  <script type="text/javascript" src="assets/lib/angular-messages/angular-messages.js"></script>
+  <script src="assets/lib/chart.js/dist/Chart.min.js"></script>
+  <script src="assets/lib/angular-chart.js/dist/angular-chart.min.js"></script>
+  <script src="assets/lib/md-date-range-picker/dist/md-date-range-picker.min.js"></script>
+
+
+
+
+  <script type="text/javascript" src="app/index.module.js"></script>
+  <script type="text/javascript" src="app/index.run.js"></script>
+  <script type="text/javascript" src="app/index.route.js"></script>
+  <script type="text/javascript" src="app/home/home.service.js"></script>
+
+  <script type="text/javascript" src="app/home/home.controller.js"></script>
+
+
+  <script type="text/javascript" src="app/common/lb-services.js"></script>
+  <script type="text/javascript" src="app/common/connection_interceptor.factory.js"></script>
+  <script type="text/javascript" src="app/common/localstorage.service.js"></script>
+  <script type="text/javascript" src="app/common/ajax.service.js"></script>
+  <script type="text/javascript" src="app/common/custom_filters.js"></script>
+
+  <script type="text/javascript" src="app/home/home.controller.js"></script>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+</head>
+
+<body ng-app="LifeBoat" ng-cloak>
+  <div ui-view layout="row" layout-fill></div>
+</body>
+
+</html>

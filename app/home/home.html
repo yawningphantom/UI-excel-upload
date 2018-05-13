@@ -1,0 +1,32 @@
+<div layout="column" flex>
+  <md-toolbar layout="row" layout-align="center center">
+    <section layout-align="start center" layout-fill flex>
+      <md-button hide-gt-sm ng-click="toggleItemsList()" aria-label="Menu">
+        <i class="material-icons">menu</i>
+      </md-button>
+    </section>
+    <section layout-align="end center">
+    </section>
+  </md-toolbar>
+
+  <md-content flex class="md-padding page-content">
+    <div ui-view>
+      <div layout="column">
+        <div class="md-title">
+          <center>
+            <h1> Upload Your xlsx file here </h1>
+          </center>
+        </div>
+        <div layout="row">
+          <input type="file" onchange="angular.element(this).scope().filesChanged(this)">
+          <button type="button" ng-click="home.upload()">UPLOAD</button>
+        </div>
+      </div>
+
+      <div class="" layout="column">
+        <br><br>
+        <div id="container" style="min-width: 500px; height: 400px; margin: 0 auto"></div>
+      </div>
+    </div>
+  </md-content>
+</div>
